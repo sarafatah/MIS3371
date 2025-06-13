@@ -39,7 +39,6 @@ Description: Fully compliant patient registration form
         <div class="format">
             <table>
 
-                <!-- Name section -->
                 <tr>
                     <td class="td1"><label for="fname">First Name:</label></td>
                     <td><input type="text" name="fname" id="fname" maxlength="30" required></td>
@@ -49,19 +48,17 @@ Description: Fully compliant patient registration form
                     <td><input type="text" name="lname" id="lname" maxlength="30" required></td>
                 </tr>
 
-                <!-- DOB -->
                 <tr>
                     <td class="td1"><label for="dob">Date of Birth:</label></td>
                     <td><input type="date" id="dob" name="dob" required></td>
                 </tr>
 
-                <!-- SSN -->
+
                 <tr>
                     <td class="td1"><label for="ssn">Social Security:</label></td>
                     <td><input type="password" name="ssn" id="ssn" maxlength="11" required></td>
                 </tr>
 
-                <!-- Address -->
                 <tr>
                     <td class="td1"><label for="address1">Address Line 1:</label></td>
                     <td><input type="text" name="address1" id="address1" maxlength="30" required></td>
@@ -71,7 +68,6 @@ Description: Fully compliant patient registration form
                     <td><input type="text" name="address2" id="address2" maxlength="30" placeholder="Apt, suite, unit, etc."></td>
                 </tr>
 
-                <!-- City, State, Zip -->
                 <tr>
                     <td class="td1"><label for="city">City:</label></td>
                     <td><input type="text" name="city" id="city" maxlength="30" required></td>
@@ -137,13 +133,11 @@ Description: Fully compliant patient registration form
                     <td><input type="text" name="zip" id="zip" maxlength="10" required></td>
                 </tr>
 
-                <!-- Email -->
                 <tr>
                     <td class="td1"><label for="email">Email Address:</label></td>
                     <td><input type="email" name="email" id="email" required></td>
                 </tr>
 
-                <!-- Checkboxes -->
                 <tr>
                     <td class="td1"><label>Check all that apply:<br>Have you had:</label></td>
                     <td colspan="3">
@@ -155,13 +149,11 @@ Description: Fully compliant patient registration form
                     </td>
                 </tr>
 
-                <!-- Textarea -->
                 <tr>
                     <td class="td1"><label for="notes">Current Symptoms:</label></td>
-                    <td colspan="3"><textarea id="notes" name="notes" rows="3" cols="50"></textarea></td>
+                    <td colspan="3"><textarea id="notes" name="notes" rows="3" cols="50" placeholder="Enter your symptoms here:"></textarea></td>
                 </tr>
 
-                <!-- Radio Buttons -->
                 <tr>
                     <td class="td1"><label>Gender:</label></td>
                     <td colspan="3">
@@ -187,7 +179,6 @@ Description: Fully compliant patient registration form
                     </td>
                 </tr>
 
-                <!-- Slider -->
                 <tr>
                     <td class="td1"><label>Health Rating (1-10):</label></td>
                     <td colspan="3">
@@ -196,13 +187,11 @@ Description: Fully compliant patient registration form
                     </td>
                 </tr>
 
-                <!-- User ID -->
                 <tr>
                     <td class="td1"><label for="uid">User ID:</label></td>
                     <td><input type="text" name="uid" id="uid" maxlength="20" required></td>
                 </tr>
 
-                <!-- Passwords -->
                 <tr>
                     <td class="td1"><label for="pword">Password:</label></td>
                     <td><input type="password" name="pword" id="pword" minlength="10" required></td>
@@ -212,11 +201,10 @@ Description: Fully compliant patient registration form
                     <td><input type="password" name="pword2" id="pword2" minlength="10" required></td>
                 </tr>
 
-                <!-- Submit / Reset -->
                 <tr>
                     <td colspan="4" align="center">
                         <input type="submit" value="Submit">
-                        <input type="reset" value="Clear and Start Over">
+                        <input type="reset" value="Reset"> <br>
                     </td>
                 </tr>
 
