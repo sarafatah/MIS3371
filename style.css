@@ -56,14 +56,6 @@ th {
 }
 
 footer {
-    position: flex;
-    bottom: 0;
-    width: 100%;
-    background-color: #cce6ff;
-    height: 2.0rem;
-}
-
-footer {
     width: 100%;
     background-color: #cce6ff;
     padding: 10px;
