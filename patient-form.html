@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+    Program name: patient-form.html
+    Name: Sara Fatah
+    Date created: 06/10/2025
+    Date last edited: 06/13/2025
+    Version: 1.0
+    Description: Homework 1 HTML 
+-->
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="hw1.css">
+   <title>Summit Medical</title>
+</head>
+<body>
+  <header>
+    <table width="100%">
+        <tr>
+            <td valign="top" align="left" width="20%">
+                <div class="image">
+                    <img align="center" src="cliniclogo.png" alt="Inset name of your Logo" width="80px" id="logo"/>
+                </div>
+            </td>
+            <td>
+                <h2>Summit Medical</h2>
+            </td>
+            <td valign="bottom" align="right" width="20%">
+                <p>Today's Date: <span id="today"></span></p>
+            </td>
+        </tr>
+    </table>
+</header>
+<hr>
+<form action="thankyou.html">
+    <center>
+        <div class="format">
+            <table>
+<tr>
+    <th colspan="4">Create Account</th>
+</tr>
+<tr>
+    <td><label for="fname">First Name:</label></td>
+    <td>
+        <input type="text" name="fname" id="fname" maxlength="30" required placeholder="Yulia">
+    </td>
+</tr>
+<tr>
+    <td><label for="pgender">Gender:</label></td>
+    <td>
+        <input type="radio" id="g1" name="pgender" value="Male"> Male
+        <input type="radio" id="g2" name="pgender" value="Female"> Female
+        <input type="radio" id="g3" name="pgender" value="Other"> Other
+    </td>
+</tr>
+<tr>
+    <td><label for="dob">Date of Birth:</label></td>
+    <td>
+        <input type="date" id="dob" name="dob">
+    </td>
+</tr>
+<tr>
+    <td><label for="address1">Address Line 1:</label></td>
+    <td>
+        <input type="text" name="address1" id="address1" maxlength="30" required placeholder="1234 Address">
+    </td>
+</tr>
+<tr>
+    <td><label for="state">State:</label></td>
+    <td>
+        <select>
+            <option selected disabled>Please Select One</option>
+               <option value="AL">Alabama</option>
+               <option value="AK">Alaska</option>
+               <option value="AZ">Arizona</option>
+               <option value="AR">Arkansas</option>
+               <option value="CA">California</option>
+               <option value="CO">Colorado</option>
+               <option value="CT">Connecticut</option>
+               <option value="DE">Delaware</option>
+               <option value="FL">Florida</option>
+               <option value="GA">Georgia</option>
+               <option value="HI">Hawaii</option>
+               <option value="ID">Idaho</option>
+               <option value="IL">Illinois</option>
+               <option value="IN">Indiana</option>
+               <option value="IA">Iowa</option>
+               <option value="KS">Kansas</option>
+               <option value="KY">Kentucky</option>
+               <option value="LA">Louisiana</option>
+               <option value="ME">Maine</option>
+               <option value="MD">Maryland</option>
+               <option value="MA">Massachusetts</option>
+               <option value="MI">Michigan</option>
+               <option value="MN">Minnesota</option>
+               <option value="MS">Mississippi</option>
+               <option value="MO">Missouri</option>
+               <option value="MT">Montana</option>
+               <option value="NE">Nebraska</option>
+               <option value="NV">Nevada</option>
+               <option value="NH">New Hampshire</option>
+               <option value="NJ">New Jersey</option>
+               <option value="NM">New Mexico</option>
+               <option value="NY">New York</option>
+               <option value="NC">North Carolina</option>
+               <option value="ND">North Dakota</option>
+               <option value="OH">Ohio</option>
+               <option value="OK">Oklahoma</option>
+               <option value="OR">Oregon</option>
+               <option value="PA">Pennsylvania</option>
+               <option value="RI">Rhode Island</option>
+               <option value="SC">South Carolina</option>
+               <option value="SD">South Dakota</option>
+               <option value="TN">Tennessee</option>
+               <option value="TX">Texas</option>
+               <option value="UT">Utah</option>
+               <option value="VT">Vermont</option>
+               <option value="VA">Virginia</option>
+               <option value="WA">Washington</option>
+               <option value="WV">West Virginia</option>
+               <option value="WI">Wisconsin</option>
+               <option value="WY">Wyoming</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td><label for="history">Check all of the following that apply:<br>Have you had:</label></td>
+    <td>
+        <input type="checkbox" id="chickenpox" value="Chicken Pox"> Chicken Pox<br>
+        <input type="checkbox" id="measles" value="Measles"> Measles<br>
+        <input type="checkbox" id="mumps" value="Mumps"> Mumps<br>
+        <input type="checkbox" id="hepatitis" value="Hepatitis"> Hepatitis<br>
+        <input type="checkbox" id="covid19" value="COVID-19"> COVID-19<br>
+
+    </td>
+</tr>
+<tr>
+    <td><label for="notes">Additional Notes:</label></td>
+    <td>
+        <textarea id="notes" name="notes" rows="4" cols="35" placeholder="Enter any additional medical history or concerns here..."></textarea>
+    </td>
+</tr>
+<tr>
+    <td class="td1"><label for="smoking">Do you smoke?</label></td>
+    <td>
+        <input type="radio" id="smokeYes" name="smoking" value="Yes">
+        <label for="smokeYes">Yes</label><br>
+        <input type="radio" id="smokeNo" name="smoking" value="No">
+        <label for="smokeNo">No</label>
+    </td>
+</tr>
+<tr>
+    <td class="td1"><label for="alcohol">Do you drink alcohol?</label></td>
+    <td>
+        <input type="radio" id="alcoholYes" name="alcohol" value="Yes">
+        <label for="alcoholYes">Yes</label><br>
+        <input type="radio" id="alcoholNo" name="alcohol" value="No">
+        <label for="alcoholNo">No</label>
+    </td>
+</tr>
+
+<tr>
+    <td class="td1"><label for="exercise">Do you exercise regularly?</label></td>
+    <td>
+        <input type="radio" id="exerciseYes" name="exercise" value="Yes">
+        <label for="exerciseYes">Yes</label><br>
+        <input type="radio" id="exerciseNo" name="exercise" value="No">
+        <label for="exerciseNo">No</label>
+    </td>
+</tr>
+<tr>
+    <td class="td1"><label for="range">How is your health?<br/>(Rate from 1 to 10)</label></td>
+    <td>
+	    <input
+	     type="range"
+	     name="range"
+	     id="range"
+       min="1"
+       max="10"
+       value="0"
+       />
+       <span id="range-slider"></span>
+     </td>
+ </tr>
+ <tr>
+    <td class="td1"><label for="uid">User ID:</label></td>
+                    <td>
+                        <input
+                        type="text"
+                        name="uid"
+                        id="uid"
+                        maxlength="20"
+                        required
+                        title="Please enter a user ID:"
+                        placeholder="Your user ID"
+                        />
+                    </td>
+</tr>
+<tr>
+    <td><label for="pword">Password:</label></td>
+    <td>
+        <input type="password" name="pword" id="pword" minlength="10" required>
+    </td>
+</tr>
+<tr>
+    <td colspan="4">
+        <center>
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+        </center>
+    </td>
+</tr>
+<footer>
+    <p>&#169; Insert name here <a href="contact.html">Contact Us!</a></p>
+</footer>
+<script src="hw1.js"></script>
