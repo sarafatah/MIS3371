@@ -30,8 +30,9 @@ form {
 }
 
 table {
-  width: 92%;
+  width: 80%;
   margin: 0 auto;
+  border-spacing: 10px 10px; 
 }
 
 
