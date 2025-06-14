@@ -50,6 +50,10 @@ main {
     font-weight: normal;
 }
 
+tr {
+    margin-bottom: 10px;
+}
+
 th {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
