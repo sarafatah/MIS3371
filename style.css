@@ -30,8 +30,10 @@ form {
 }
 
 table {
-  border-spacing: 5px 5px;
+  width: 80%;
+  margin: 0 auto;
 }
+
 
 h1, h2 {
     text-align: center;
