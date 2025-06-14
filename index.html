@@ -46,13 +46,10 @@ Description: patient registration form
                 <tr>
                     <td class="td1"><label for="fname">First Name:</label></td>
                     <td><input type="text" name="fname" id="fname" maxlength="30" required></td>
-                    
                     <td class="td1"><label for="mname">Middle Initial:</label></td>
-                    <td><input type="text" name="mname" id="mname" maxlength="1" size="2"></td>
-                    
+                    <td><input type="text" name="mname" id="mname" maxlength="1"></td>
                     <td class="td1"><label for="lname">Last Name:</label></td>
                     <td><input type="text" name="lname" id="lname" maxlength="30" required></td>
-
                 </tr>
 
                 <!-- DOB -->
@@ -158,18 +155,16 @@ Description: patient registration form
                 </tr>
 
                 <!-- CHECKBOXES -->
-               <tr>
-                  <td class="td1"><label>Check all that apply:<br>Have you had:</label></td>
-                  <td colspan="3">
-                    <div style="white-space: nowrap;">
-                      <input type="checkbox" id="chickenpox" value="Chicken Pox"> Chicken Pox
-                      <input type="checkbox" id="measles" value="Measles"> Measles
-                      <input type="checkbox" id="covid" value="Covid-19"> Covid-19
-                      <input type="checkbox" id="smallpox" value="Small Pox"> Small Pox
-                      <input type="checkbox" id="tetanus" value="Tetanus"> Tetanus
-                    </div>
-                  </td>
-               </tr>
+                <tr>
+                    <td class="td1"><label>Check all that apply:<br>Have you had:</label></td>
+                    <td colspan="3">
+                        <input type="checkbox" id="chickenpox" value="Chicken Pox"> Chicken Pox
+                        <input type="checkbox" id="measles" value="Measles"> Measles
+                        <input type="checkbox" id="covid" value="Covid-19"> Covid-19
+                        <input type="checkbox" id="smallpox" value="Small Pox"> Small Pox
+                        <input type="checkbox" id="tetanus" value="Tetanus"> Tetanus
+                    </td>
+                </tr>
 
                 <!-- SYMPTOMS TEXTAREA -->
                 <tr>
@@ -250,6 +245,4 @@ Description: patient registration form
 
 </body>
 </html>
-
-
 
