@@ -50,6 +50,10 @@ main {
     font-weight: normal;
 }
 
+td {
+    padding: 10px 5px;
+}
+
 tr {
     margin-bottom: 10px;
 }
