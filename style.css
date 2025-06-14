@@ -98,3 +98,8 @@ p {
     font-weight: normal;
 }
 
+input, select, textarea {
+    display: block;
+    margin: 5px auto;
+}
+
