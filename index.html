@@ -4,7 +4,7 @@ Program name: index.html
 Author: Sara Fatah
 Date created: 06/10/2025
 Date last edited: 06/13/2025
-Version: 2.0
+Version: 1.0
 Description: patient registration form
 -->
 <html lang="en">
@@ -47,7 +47,7 @@ Description: patient registration form
                     <td class="td1"><label for="fname">First Name:</label></td>
                     <td><input type="text" name="fname" id="fname" maxlength="30" required></td>
                     <td class="td1"><label for="mname">Middle Initial:</label></td>
-                    <td><input type="text" name="mname" id="mname" maxlength="1" optional></td>
+                    <td><input type="text" name="mname" id="mname" maxlength="1"></td>
                     <td class="td1"><label for="lname">Last Name:</label></td>
                     <td><input type="text" name="lname" id="lname" maxlength="30" required></td>
                 </tr>
@@ -64,7 +64,7 @@ Description: patient registration form
                     <td><input type="password" name="ssn" id="ssn" maxlength="11" required></td>
                 </tr>
 
-                <!-- ADDRESS SECTION -->
+                <!-- ADDRESS -->
                 <tr>
                     <td class="td1"><label for="address1">Address Line 1:</label></td>
                     <td><input type="text" name="address1" id="address1" maxlength="30" required></td>
@@ -74,19 +74,19 @@ Description: patient registration form
                     <td><input type="text" name="address2" id="address2" maxlength="30" placeholder="Apt, suite, unit, etc."></td>
                 </tr>
 
-                <!-- CITY, STATE, ZIP -->
+                <!-- CITY -->
                 <tr>
                     <td class="td1"><label for="city">City:</label></td>
                     <td><input type="text" name="city" id="city" maxlength="30" required></td>
+                </tr>
+
+                <!-- STATE -->
+                <tr>
                     <td class="td1"><label for="state">State:</label></td>
                     <td>
-                        <!-- State Dropdown -->
-                      <tr>
-    <td><label for="state">State:</label></td>
-    <td>
-        <select>
-            <option selected disabled>Please Select One</option>
-                       <option value="AL">Alabama</option>
+                        <select id="state" name="state" required style="width: 200px;">
+                            <option value="" disabled selected>Select State</option>
+                            <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
                             <option value="AR">Arkansas</option>
@@ -138,10 +138,12 @@ Description: patient registration form
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
                             <option value="PR">Puerto Rico</option>
-      </select>
-    </td>
-</tr>
-            
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- ZIP -->
+                <tr>
                     <td class="td1"><label for="zip">Zip Code:</label></td>
                     <td><input type="text" name="zip" id="zip" maxlength="10" required></td>
                 </tr>
@@ -152,7 +154,7 @@ Description: patient registration form
                     <td><input type="email" name="email" id="email" required></td>
                 </tr>
 
-                <!-- CHECKBOX SECTION -->
+                <!-- CHECKBOXES -->
                 <tr>
                     <td class="td1"><label>Check all that apply:<br>Have you had:</label></td>
                     <td colspan="3">
@@ -164,13 +166,13 @@ Description: patient registration form
                     </td>
                 </tr>
 
-                <!-- TEXTAREA -->
+                <!-- SYMPTOMS TEXTAREA -->
                 <tr>
                     <td class="td1"><label for="notes">Current Symptoms:</label></td>
                     <td colspan="3"><textarea id="notes" name="notes" rows="3" cols="50" placeholder="Enter your symptoms here:"></textarea></td>
                 </tr>
 
-                <!-- RADIO BUTTONS SECTION -->
+                <!-- RADIO BUTTONS -->
                 <tr>
                     <td class="td1"><label>Gender:</label></td>
                     <td colspan="3">
@@ -205,23 +207,23 @@ Description: patient registration form
                     </td>
                 </tr>
 
-                <!-- USER ID -->
+                <!-- USER ID & PASSWORD -->
                 <tr>
                     <td class="td1"><label for="uid">User ID:</label></td>
                     <td><input type="text" name="uid" id="uid" maxlength="20" required></td>
                 </tr>
 
-                <!-- PASSWORD FIELDS -->
                 <tr>
                     <td class="td1"><label for="pword">Password:</label></td>
                     <td><input type="password" name="pword" id="pword" minlength="10" required></td>
                 </tr>
+
                 <tr>
                     <td class="td1"><label for="pword2">Re-enter Password:</label></td>
                     <td><input type="password" name="pword2" id="pword2" minlength="10" required></td>
                 </tr>
 
-                <!-- SUBMIT / RESET BUTTONS -->
+                <!-- SUBMIT / RESET -->
                 <tr>
                     <td colspan="4" align="center">
                         <input type="submit" value="Submit" style="margin-right: 20px;">
@@ -239,9 +241,9 @@ Description: patient registration form
     <p>&#169; 2025 Summit Medical | PO Box 18881 | Sugar Land TX 77496 | <a href="contact.html">Contact Us!</a></p>
 </div>
 
-<!-- JAVASCRIPT -->
 <script src="hw1.js"></script>
 
 </body>
 </html>
+
 
